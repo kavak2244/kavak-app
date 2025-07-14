@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>اپ مدیریت مالی KAVAK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>مدیریت مالی KAVAK</h1>
+
+    <section>
+      <h2>ثبت مشتری</h2>
+      <input id="custName" placeholder="نام مشتری">
+      <input id="custAmount" placeholder="مبلغ فاکتور">
+      <input id="custWeek" placeholder="شماره هفته خرید">
+      <input id="custInstallments" placeholder="تعداد اقساط">
+      <input id="custPercent" placeholder="درصد پیش‌پرداخت">
+      <button id="addCustomer">ثبت</button>
+    </section>
+
+    <section>
+      <h2>لیست مشتری‌ها</h2>
+      <ul id="customerList"></ul>
+    </section>
+
+    <section>
+      <h2>جدول ۹۶ هفته‌ای</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>هفته</th>
+            <th>دریافتی نقدی</th>
+            <th>دریافتی اقساط</th>
+            <th>مانده نقدینگی</th>
+          </tr>
+        </thead>
+        <tbody id="weekTable"></tbody>
+      </table>
+    </section>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
